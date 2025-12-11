@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nihal | Robotics & Computer Vision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Robotics, computer vision, and ML—systems, calibration, and real-world deployment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0f1218; --fg:#e7e9ee; --muted:#9aa0a6; --accent:#6ee7b7; --card:#151924; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 48px 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; margin-bottom:32px; }
+    nav a { color:var(--muted); text-decoration:none; margin-left:18px; }
+    nav a:hover { color:var(--fg); }
+    .hero { padding:48px; background: linear-gradient(180deg, rgba(110,231,183,0.08), rgba(21,25,36,0.6)); border:1px solid #222636; border-radius:16px; }
+    .hero h1 { margin:0 0 8px; font-size:40px; line-height:1.1; }
+    .hero p { margin:0; color:var(--muted); font-size:18px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-top:28px; }
+    .card { background:var(--card); border:1px solid #222636; border-radius:12px; padding:20px; }
+    .card h3 { margin:0 0 8px; font-size:18px; }
+    .card p { margin:0 0 12px; color:var(--muted); }
+    .tag { display:inline-block; font-size:12px; padding:4px 8px; border:1px solid #2a2f3f; border-radius:999px; margin-right:6px; color:#b8bdc7; }
+    .footer { margin-top:36px; color:var(--muted); font-size:14px; border-top:1px solid #222636; padding-top:16px; }
+    a.btn { display:inline-block; margin-top:14px; padding:10px 14px; border-radius:10px; background:var(--accent); color:#0b0f16; font-weight:600; text-decoration:none; }
+    .links a { margin-right:14px; }
+    @media (max-width:560px) { .hero { padding:28px; } .hero h1 { font-size:32px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div><strong>Nihal Soans (Computer Vision Engineer)</strong></div>
+      <nav class="links">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Helping Robots See</h1>
+      <p>Building dependable perception and control—calibration, stereo geometry, and real-time deployment on edge (Jetson, ARM).</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="work" class="grid">
+      <div class="card">
+        <h3>MLOPS, Computer Vision Engineer — BNSF</h3>
+        <p>Deployed CV pipelines for railway ops; I developed a scalable Python-based deep learning inference pipeline that enabled BNSF to monitor theft detections on edge devices across its railways, achieving a 700% boost in real-time model performance through advanced optimizations, and built a faster in-house web inference API—delivering 60% speed improvements in environments where edge systems could not run deep learning</p>
+        <span class="tag">Python</span><span class="tag">Mlops</span><span class="tag">Model Optimisation</span>
+      </div>
+      <div class="card">
+        <h3>ML Engineer in Vision — Radar</h3>
+        <p>I spearheaded the development of a groundbreaking 360° tri-camera prototype, powering digital twin initiatives and enabling advanced spatial analysis of retail environments. By integrating scalable computer vision architectures in C++ with LiDAR mapping, deep learning models, and edge accelerators, I delivered real-time performance under 30fps while reducing streaming bandwidth by 45x. My work spanned from automated firmware updates and calibration optimization to rigorous vendor evaluations, achieving over 80% cost savings without compromising reliability. These innovations—spanning camera systems, IMU + LiDAR localization, and AI-driven spatial tracking—set new benchmarks in computer vision applications for retail and beyond.</p>
+        <span class="tag">Physical AI</span><span class="tag">Jetson</span><span class="tag">LIDAR</span><span class="tag">Computer Vision</span><span class="tag">C++</span>
+      </div>
+      <div class="card">
+        <h3>Robotics Engineer in Vision — Softwear Automation</h3>
+        <p>engineered advanced computer vision pipelines for textile automation, prototyping deep learning networks in TensorFlow that achieved >99% accuracy in fabric side detection and a 90% improvement in seam flip identification. Leveraging ROS-based middleware in C++, I enabled high-throughput image acquisition across diverse GenICam interfaces with reliable multicamera support. Using HALCON’s C++ API, I implemented precision machine vision algorithms for fabric stretch analysis, meeting client specifications with 93% accuracy. I further developed a bidirectional C++/ROS framework for synchronized PLC–robot and vision system communication, alongside a PyQT calibration interface for robotic cameras to streamline misalignment diagnostics. Finally, I innovated a deep learning interpolation method for gantry robot table mapping, reducing processing time from one day to 30 minutes through Beckhoff PLC and EtherCAT integration</p>
+        <span class="tag">Robotics</span><span class="tag">Machine Vision</span><span class="tag">Computer Vision</span>
+      </div>
+    </section>
+
+    <section id="projects" class="grid">
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Round Rock, TX · Available for collaborations and technical leadership.</p>
+      <p><a href="https://github.com/nihalsoans91">Github<your-username></a> · <a href="https://linkedin.com/in/nihalsoans">Linkedin<your-handle></a></p>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Nihal. Built with plain HTML/CSS. No frameworks, fast load.
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
